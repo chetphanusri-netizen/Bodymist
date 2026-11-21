@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สินค้าทั้งหมด | Body Scent</title>
+  <meta name="description" content="น้ำหอมฉีดตัวและโรลออน Body Scent เลือกตามอารมณ์ Fresh, Sweet, Confident และ Romance">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* เฉพาะหน้าสินค้า */
+    .page-head {
+      padding: var(--space-6) 0 var(--space-5);
+      text-align: center;
+      background: var(--bg-soft);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .page-head h1 {
+      margin-bottom: 0;
+      font-size: clamp(2rem, 4vw, 3rem);
+    }
+
+    .page-head .rule { margin: var(--space-3) auto; }
+    .page-head p { margin: 0 auto; }
+
+    @media (max-width: 640px) {
+      .page-head { padding: var(--space-5) 0 var(--space-4); }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">BODY SCENT</a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html" aria-current="page">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <div class="container">
+        <h1>สินค้าทั้งหมด</h1>
+        <span class="rule" aria-hidden="true"></span>
+        <p>น้ำหอมฉีดตัวและโรลออน เลือกกรองตามอารมณ์ที่ต้องการ</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div id="filter-bar" class="filters" role="group" aria-label="กรองตามอารมณ์"></div>
+        <div id="product-list" class="product-grid" aria-live="polite">
+          <p class="muted">กำลังโหลดสินค้า...</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="mb-0" style="margin-left:auto;margin-right:auto;">&copy; 2026 Body Scent</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
